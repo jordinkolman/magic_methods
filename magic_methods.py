@@ -7,8 +7,13 @@ class Employee:
     def __init__(self):
         print("__init__ magic method is called")
         self.name = 'Jordin'
+        self.salary = 100000
+        
+    def __str__(self):
+        return f'name={self.name}, salary=${str(self.salary)}'
         
     
 
 if __name__ == "__main__":
     employee_one = Employee()
+    print(employee_one)
